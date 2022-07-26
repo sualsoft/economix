@@ -35,7 +35,7 @@ methodology_and_result_section:
       icon: icon-methodology.svg
 
     - title: Results
-      content: "The survey results are highly relevant both for practice-oriented policy advice and for scientific research, because the IAB job survey is unique in Germany. The resulting studies have a major influence on the decisions in the labour market policy of the federal government, the federal states and in Europe. At regular intervals, the IAB publishes press releases, short reports and articles in order to make the results available to a broad public. A selection can be found at: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a> ."
+      content: "The survey results are highly relevant both for practice-oriented policy advice and for scientific research, because the IAB job survey is unique in Germany. The resulting studies have a major influence on the decisions in the labour market policy of the federal government, the federal states and in Europe. At regular intervals, the IAB publishes press releases, short reports and articles in order to make the results available to a broad public. A selection can be found at: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a>."
       icon: icon-result.svg
 
 ####################### Participation Section #########################
