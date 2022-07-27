@@ -67,22 +67,22 @@ information_section:
   q_and_a:
     - title: What does the information refer to?
       content: Please answer the questionnaire for the company/administration addressed in the cover letter. By this we mean the local production, trade, service or administrative site, and NOT the entire company, the entire group or the higher-level administrative office. The holding is the same local unit as when registering for social security (social security company number).
-      class:
+      class: 1
 
     - title: Notice for branches, schools and other public services
       content: "Please fill out the questionnaire even if your company/administrative office does not have its own personnel administration. It depends on the personnel situation on site. If this is not possible for formal reasons, please forward the questionnaire to the responsible body. Or let us know. We are happy to take care of this for you."
-      class:
+      class: 2
 
     - title: Note for temporary employment companies
       content: "As a temporary employment agency, please indicate the persons employed by you as your employees or employees subject to social security contributions (and NOT as temporary workers – this only applies to companies in which these persons are employed)."
-      class:
+      class: 3
 
 ####################### impressum Section #########################
 
 impressum_section:
   title: Impressum
   sub_title: "Responsible according to §6 MDStV:"
-  iamge: "executing.png"
+  image: "executing.png"
   address: "Economix Research & Consulting <br> Kurt Vogler-Ludwig und Partner <br> Dr. Ben Kriechel <br> Lindwurmstraße 9 <br> 80337 München"
   tel: +49 89 990 156 627
   fax: +49 89 990 156 623
