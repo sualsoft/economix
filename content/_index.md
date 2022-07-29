@@ -34,16 +34,19 @@ methodology_and_result_section:
       content: "The IAB Job Survey has been carried out annually since 1989. It is aimed at a representative selection of companies and administrative offices in West and East Germany. The farms are selected at random every year in order to keep the burden on the individual farms low."
       icon: icon-methodology.svg
 
-    - title: Results
-      content: "The survey results are highly relevant both for practice-oriented policy advice and for scientific research, because the IAB job survey is unique in Germany. The resulting studies have a major influence on the decisions in the labour market policy of the federal government, the federal states and in Europe. At regular intervals, the IAB publishes press releases, short reports and articles in order to make the results available to a broad public. A selection can be found at: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a>."
-      icon: icon-result.svg
+    - title: Participation
+      content: "Participation is voluntary, but we hope for your support! Your answers are very important to us, because only if we receive enough information from companies on personnel policy and staffing can we draw well-founded scientific conclusions about the current and future dynamics on the labour market. Please support us in this."
+      icon: icon-articipation.svg
+      
+
+
 
 ####################### Participation Section #########################
 participation_section:
   enable: true
-  title: Participation
-  content: "Participation is voluntary, but we hope for your support! Your answers are very important to us, because only if we receive enough information from companies on personnel policy and staffing can we draw well-founded scientific conclusions about the current and future dynamics on the labour market. Please support us in this."
-  icon: icon-articipation.svg
+  title: Results
+  content: "The survey results are highly relevant both for practice-oriented policy advice and for scientific research, because the IAB job survey is unique in Germany. The resulting studies have a major influence on the decisions in the labour market policy of the federal government, the federal states and in Europe. At regular intervals, the IAB publishes press releases, short reports and articles in order to make the results available to a broad public. A selection can be found at: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a>."
+  icon: icon-result.svg
   image: participation.png
 
 ####################### executing Section #########################

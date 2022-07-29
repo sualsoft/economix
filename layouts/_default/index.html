@@ -4,7 +4,8 @@
 
   <body>
     <!-- ======= Hero Section ======= -->
-    {{ with .Params.hero_section}} {{ if .enable }}
+    {{ with .Params.hero_section}}
+    {{ if .enable }}
     <section id="hero" class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
@@ -41,12 +42,14 @@
         </div>
       </div>
     </section>
-    {{ end }} {{ end }}
+    {{ end }}
+    {{ end }}
     <!-- End Hero -->
 
     <main id="main">
       <!-- ======= Logo Section ======= -->
-      {{ with .Params.logo_section}} {{ if .enable }}
+      {{ with .Params.logo_section}}
+      {{ if .enable }}
       <section class="clients">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
@@ -58,10 +61,12 @@
           </div>
         </div>
       </section>
-      {{ end }} {{ end }}
+      {{ end }}
+      {{ end }}
       <!-- End Clients Section -->
 
-      {{ with .Params.methodology_and_result_section}} {{ if .enable }}
+      {{ with .Params.methodology_and_result_section}}
+      {{ if .enable }}
       <!-- ======= methodology_and_result_sectiont Section ======= -->
       <section class="methodology_and_result_section section-bg">
         <div class="container" data-aos="fade-up">
@@ -83,81 +88,15 @@
           </div>
         </div>
       </section>
-      {{ end }} {{ end }}
+      {{ end }}
+      {{ end }}
       <!-- End methodology_and_result_section Section -->
 
-      <!-- ======= participation Section ======= -->
-      {{ with .Params.participation_section}} {{ if .enable }}
-      <section class="participation_section">
-        <div class="container" data-aos="fade-up">
-          <div class="row align-items-center">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <img
-                src="/assets/img/{{.image | markdownify}}"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-
-            <div
-              class="col-lg-6 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="box">
-                <div class="icon">
-                  <img src="/assets/img/{{.icon | markdownify}}" alt="Icon" />
-                </div>
-                <h3>{{.title | markdownify}}</h3>
-                <p>{{.content| markdownify}}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {{ end }} {{ end }}
-      <!-- End participation Section -->
-
-      <!-- ======= participation Section ======= -->
-      {{ with .Params.executing_section}} {{ if .enable }}
-      <section class="participation_section section-bg">
-        <div class="container" data-aos="fade-up">
-          <div class="row align-items-center">
-            <div
-              class="col-lg-6 mt-4 mt-lg-0"
-              data-aos="fade-up"
-              data-aos-delay="400"
-            >
-              <div class="box">
-                <div class="icon">
-                  <img src="/assets/img/{{.icon | markdownify}}" alt="Icon" />
-                </div>
-                <h3>{{.title | markdownify}}</h3>
-                <p>{{.content| markdownify}}</p>
-                <br />
-                {{ with.executing_bottom }}
-                <h3>{{.title | markdownify}}</h3>
-                <p>{{.content| safeHTML}}</p>
-
-                {{end}}
-              </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-              <img
-                src="/assets/img/{{.image | markdownify}}"
-                class="img-fluid"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      {{ end }} {{ end }}
-      <!-- End participation Section -->
-
-      {{ with .Params.information_section}} {{ if .enable }}
       <!-- ======= F.A.Q Section ======= -->
-      <section id="faq" class="faq">
+      {{ with .Params.information_section}}
+      {{ if .enable }}
+      
+      <section id="faq" class="faq ">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
             <div class="col-lg-5">
@@ -203,6 +142,79 @@
       </section>
       {{ end }} {{ end }}
       <!-- End F.A.Q Section -->
+
+      <!-- ======= participation Section ======= -->
+      {{ with .Params.participation_section}}
+      {{ if .enable }}
+      <section class="participation_section">
+        <div class="container" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="/assets/img/{{.image | markdownify}}"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <div class="icon">
+                  <img src="/assets/img/{{.icon | markdownify}}" alt="Icon" />
+                </div>
+                <h3>{{.title | markdownify}}</h3>
+                <p>{{.content| markdownify}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      {{ end }}
+      <!-- End participation Section -->
+
+      <!-- ======= Executing Section ======= -->
+      {{ with .Params.executing_section}}
+      {{ if .enable }}
+      <section class="participation_section ">
+        <div class="container" data-aos="fade-up">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-6 mt-4 mt-lg-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="box">
+                <div class="icon">
+                  <img src="/assets/img/{{.icon | markdownify}}" alt="Icon" />
+                </div>
+                <h3>{{.title | markdownify}}</h3>
+                <p>{{.content| markdownify}}</p>
+                <br />
+                {{ with.executing_bottom }}
+                <h3>{{.title | markdownify}}</h3>
+                <p>{{.content| safeHTML}}</p>
+
+                {{end}}
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="/assets/img/{{.image | markdownify}}"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      {{ end }}
+      {{ end }}
+      <!-- End Executing Section -->
 
       {{ with .Params.impressum_section}}
       <!-- ======= Contact Section ======= -->
@@ -264,7 +276,7 @@
     </main>
     <!-- End #main -->
 
-    <!-- ======= modal ======= -->
+    <!-- ======= modal Section======= -->
     <section class="btn-modal">
       <div class="container">
         <div class="row justify-content-center">
@@ -289,13 +301,15 @@
             >
               Important terms
             </button>
-            {{ partial "terms.html"}} {{ partial "privacy.html"}}
+            {{ partial "terms.html"}}
+            {{ partial "privacy.html"}}
           </div>
         </div>
       </div>
     </section>
-    <!-- End modal -->
+    <!-- End modal Section-->
 
+     <!-- ======= FooterSection======= -->
     <footer id="footer" class="footer">
       <div class="container">
         <div class="copyright">
@@ -309,6 +323,7 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    <!-- End footer Section-->
 
     <!-- Vendor JS Files -->
     <script src="/assets/vendor/aos/aos.js"></script>
