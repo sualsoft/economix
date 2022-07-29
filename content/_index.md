@@ -1,8 +1,11 @@
 ---
 title: "  This is a title"
+layout: home-de
 # meta description
 description: This description for the seo perpose
 keyword: [you, can, add, lot]
+
+
 
 # Content
 ####################### Hero Section #########################
@@ -10,11 +13,11 @@ keyword: [you, can, add, lot]
 hero_section:
   enable: true
   title: "IAB Stellenerhebung"
-  content: " Welcome to the online survey of the IAB Job Survey 2022 on behalf of the <span>Federal Employment Agency / IAB</span>."
+  content: " Willkommen zur Onlineumfrage der IAB Stellenerhebung 2022 im Auftrag der Bundesagentur für Arbeit / IAB."
   hero_image: hero.png
   button:
     label: "Zur IAB Stellenerhebung 2022"
-    link: /
+    link: https://www.economix-umfrage.de/index.php/67949
 
 ####################### Logo Section #########################
 
@@ -30,12 +33,12 @@ logo_section:
 methodology_and_result_section:
   enable: true
   sections:
-    - title: Methodology
-      content: "The IAB Job Survey has been carried out annually since 1989. It is aimed at a representative selection of companies and administrative offices in West and East Germany. The farms are selected at random every year in order to keep the burden on the individual farms low."
+    - title: Methodik
+      content: "Die IAB-Stellenerhebung wird seit 1989 jährlich durchgeführt. Sie richtet sich an eine repräsentative Auswahl von Betrieben und Verwaltungsstellen in West- und Ostdeutschland. Die Betriebe werden nach einem Zufallsverfahren jedes Jahr neu ausgewählt, um die Belastung der einzelnen Betriebe gering zu halten."
       icon: icon-methodology.svg
 
-    - title: Participation
-      content: "Participation is voluntary, but we hope for your support! Your answers are very important to us, because only if we receive enough information from companies on personnel policy and staffing can we draw well-founded scientific conclusions about the current and future dynamics on the labour market. Please support us in this."
+    - title: Teilnahme
+      content: "Die Teilnahme ist freiwillig, wir hoffen aber auf Ihre Unterstützung! Ihre Antworten sind sehr wichtig für uns, denn nur wenn wir von genügend Betrieben Informationen zur Personalpolitik und zum Stellenbesetzungsgeschehen erhalten, können wir fundierte wissenschaftliche Rückschlüsse auf die gegenwärtige und zukünftige Dynamik am Arbeitsmarkt ziehen. Bitte unterstützen Sie uns dabei."
       icon: icon-articipation.svg
       
 
@@ -44,8 +47,8 @@ methodology_and_result_section:
 ####################### Participation Section #########################
 participation_section:
   enable: true
-  title: Results
-  content: "The survey results are highly relevant both for practice-oriented policy advice and for scientific research, because the IAB job survey is unique in Germany. The resulting studies have a major influence on the decisions in the labour market policy of the federal government, the federal states and in Europe. At regular intervals, the IAB publishes press releases, short reports and articles in order to make the results available to a broad public. A selection can be found at: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a>."
+  title: Ergebnisse
+  content: "Die Befragungsergebnisse sind sowohl für die praxis¬orientierte Politikberatung als auch für die wissenschaftliche Forschung von hoher Relevanz, denn die IAB-Stellenerhebung ist in Deutschland einmalig. Die daraus entstehenden Studien haben großen Einfluss auf die Entscheidungen in der Arbeitsmarktpolitik von Bund, Ländern und in Europa. In regelmäßigen Abständen veröffentlicht das IAB Presseinformationen, Kurzberichte und Artikel, um die Ergebnisse einer breiten Öffentlichkeit zugänglich machen. Eine Auswahl finden Sie unter: <a href='https://www.iab.de/stellenerhebung'>https://www.iab.de/stellenerhebung</a>."
   icon: icon-result.svg
   image: participation.png
 
@@ -53,42 +56,46 @@ participation_section:
 
 executing_section:
   enable: true
-  title: The Executing Institute
-  content: "Economix Research & Consulting is an independent institute for economic and social policy consulting. It has been conducting this survey for many years on behalf of the Institute for Employment Research (IAB). Dr. Ben Kriechel is a member of the Management Board. Further information about the Institute's activities can be found on the website: www.economix.org."
+  title: Das ausführende Institut
+  content: "Economix Research & Consulting ist ein unabhängiges Institut für wirtschafts- und sozialpolitische Beratung. Es führt diese Umfrage seit vielen Jahren im Auftrag des Instituts für Arbeitsmarkt- und Berufsforschung (IAB) durch. Mitglied der Geschäftsführung ist Dr. Ben Kriechel. Weitere Informationen über die Tätigkeit des Instituts erhalten Sie auf der Web-Site: www.economix.org."
   icon: icon-executing.svg
   image: executing.png
   executing_bottom:
-    title: Further questions
-    content: "Survey hotline: 089-55290-691 <br> Email: personalbedarf@economix.org"
+    title: Weitere Fragen
+    content: "Umfrage-Hotline: 089-55290-691 <br> Email: personalbedarf@economix.org"
 
 ####################### information Section #########################
 
 information_section:
   enable: true
-  title: Important information
+  title: Wichtige Informationen
   image: information.png
   q_and_a:
-    - title: What does the information refer to?
-      content: Please answer the questionnaire for the company/administration addressed in the cover letter. By this we mean the local production, trade, service or administrative site, and NOT the entire company, the entire group or the higher-level administrative office. The holding is the same local unit as when registering for social security (social security company number).
+    - title: Worauf beziehen sich die Angaben?
+      content: Bitte beantworten Sie den Fragebogen für den im Anschreiben adressierten Betrieb/die adressierte Verwaltung. Damit meinen wir die örtliche Produktions-, Handels-, Dienstleistungs- oder Verwaltungsstätte, und NICHT das gesamte Unternehmen, den gesamten Konzern oder die übergeordnete Verwaltungsstelle. Als Betrieb gilt die gleiche örtliche Einheit wie bei der Meldung zur Sozialversicherung (Betriebsnummer der Sozialversicherung).
       class: 1
 
-    - title: Notice for branches, schools and other public services
-      content: "Please fill out the questionnaire even if your company/administrative office does not have its own personnel administration. It depends on the personnel situation on site. If this is not possible for formal reasons, please forward the questionnaire to the responsible body. Or let us know. We are happy to take care of this for you."
+    - title: Hinweis für Filialen, Schulen und andere öffentliche Dienststellen
+      content: "Bitte füllen Sie den Fragebogen auch dann aus, wenn Ihr Betrieb/Ihre Verwaltungsstelle keine eigene Personal-verwaltung hat. Es kommt uns auf die Personalsituation vor Ort an. Sollte dies aus formalen Gründen nicht möglich sein, leiten Sie bitte den Fragebogen an die zuständige Stelle weiter. Oder informieren Sie uns. Wir übernehmen das gerne für Sie."
       class: 2
 
-    - title: Note for temporary employment companies
-      content: "As a temporary employment agency, please indicate the persons employed by you as your employees or employees subject to social security contributions (and NOT as temporary workers – this only applies to companies in which these persons are employed)."
+    - title: Hinweis für Betriebe der Zeitarbeit
+      content: "Als Zeitarbeitsbetrieb geben Sie bitte die bei Ihnen beschäftigten Personen als Ihre Beschäftigten bzw. sozialversicherungspflichtigen Beschäftigten an (und NICHT als Leiharbeiter/-innen – dies gilt nur für Betriebe, in denen diese Personen eingesetzt werden)."
       class: 3
 
 ####################### impressum Section #########################
 
 impressum_section:
   title: Impressum
-  sub_title: "Responsible according to §6 MDStV:"
+  sub_title: "Verantwortlich i.S.d. §6 MDStV:"
   image: "executing.png"
   address: "Economix Research & Consulting <br> Kurt Vogler-Ludwig und Partner <br> Dr. Ben Kriechel <br> Lindwurmstraße 9 <br> 80337 München"
   tel: +49 89 990 156 627
   fax: +49 89 990 156 623
   email: office@economix.org
   bottom_text: "Handelsregistereintrag: Amtsgericht München PR310 "
+
+####################### Language Section #########################
+footer:
+  text: © Copyright Economix. Alle Rechte vorbehalten
 ---

@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  {{ partial "head.html"}}
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>{{.Title}}</title>
+    <meta content="{{.Description}}" name="description" />
+
+    <meta content="{{.Keywords}}" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="/assets/img/favicon.png" rel="icon" />
+    <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="/assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="/assets/css/style.css" rel="stylesheet" />
+  </head>
 
   <body>
     <!-- ======= Hero Section ======= -->
-    {{ with .Params.hero_section}}
-    {{ if .enable }}
+    {{ with .Params.hero_section}} {{ if .enable }}
     <section id="hero" class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
@@ -19,6 +61,7 @@
               <div class="text-center text-lg-start">
                 <a
                   href="{{ .link | relURL }}"
+                  target="_blank"
                   class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center"
                 >
                   <span>{{ .label }}</span>
@@ -42,14 +85,12 @@
         </div>
       </div>
     </section>
-    {{ end }}
-    {{ end }}
+    {{ end }} {{ end }}
     <!-- End Hero -->
 
     <main id="main">
       <!-- ======= Logo Section ======= -->
-      {{ with .Params.logo_section}}
-      {{ if .enable }}
+      {{ with .Params.logo_section}} {{ if .enable }}
       <section class="clients">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
@@ -61,12 +102,10 @@
           </div>
         </div>
       </section>
-      {{ end }}
-      {{ end }}
+      {{ end }} {{ end }}
       <!-- End Clients Section -->
 
-      {{ with .Params.methodology_and_result_section}}
-      {{ if .enable }}
+      {{ with .Params.methodology_and_result_section}} {{ if .enable }}
       <!-- ======= methodology_and_result_sectiont Section ======= -->
       <section class="methodology_and_result_section section-bg">
         <div class="container" data-aos="fade-up">
@@ -88,15 +127,13 @@
           </div>
         </div>
       </section>
-      {{ end }}
-      {{ end }}
+      {{ end }} {{ end }}
       <!-- End methodology_and_result_section Section -->
 
       <!-- ======= F.A.Q Section ======= -->
-      {{ with .Params.information_section}}
-      {{ if .enable }}
-      
-      <section id="faq" class="faq ">
+      {{ with .Params.information_section}} {{ if .enable }}
+
+      <section id="faq" class="faq">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
             <div class="col-lg-5">
@@ -144,8 +181,7 @@
       <!-- End F.A.Q Section -->
 
       <!-- ======= participation Section ======= -->
-      {{ with .Params.participation_section}}
-      {{ if .enable }}
+      {{ with .Params.participation_section}} {{ if .enable }}
       <section class="participation_section section-bg">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
@@ -173,14 +209,12 @@
           </div>
         </div>
       </section>
-      {{ end }}
-      {{ end }}
+      {{ end }} {{ end }}
       <!-- End participation Section -->
 
       <!-- ======= Executing Section ======= -->
-      {{ with .Params.executing_section}}
-      {{ if .enable }}
-      <section class="participation_section ">
+      {{ with .Params.executing_section}} {{ if .enable }}
+      <section class="participation_section">
         <div class="container" data-aos="fade-up">
           <div class="row align-items-center">
             <div
@@ -212,8 +246,7 @@
           </div>
         </div>
       </section>
-      {{ end }}
-      {{ end }}
+      {{ end }} {{ end }}
       <!-- End Executing Section -->
 
       {{ with .Params.impressum_section}}
@@ -301,22 +334,21 @@
             >
               Important terms
             </button>
-            {{ partial "terms.html"}}
-            {{ partial "privacy.html"}}
+            {{ partial "terms.html"}} {{ partial "privacy.html"}}
           </div>
         </div>
       </div>
     </section>
     <!-- End modal Section-->
 
-     <!-- ======= FooterSection======= -->
+    <!-- ======= FooterSection======= -->
+    {{ with .Params.footer}}
     <footer id="footer" class="footer">
       <div class="container">
-        <div class="copyright">
-          &copy; Copyright Economix. All Rights Reserved
-        </div>
+        <div class="copyright">{{ .text}}</div>
       </div>
     </footer>
+    {{ end }}
 
     <a
       href="#"
