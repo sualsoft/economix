@@ -1,0 +1,326 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #0080ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #717ff5;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+.section-bg {
+  background-color: #fff5f5;
+}
+
+.section-header {
+  padding-bottom: 20px;
+}
+.section-header h2 {
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #495057;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  color: #f03e3e;
+}
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  border: #fff 1px solid;
+  background: #f03e3e;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: rgba(240, 62, 62, 0.8);
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(to right, #fff5f5 70%, #fff 30%);
+}
+.hero h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #495057;
+}
+.hero h2 {
+  color: #495057;
+  margin: 15px 0 0 0;
+  font-size: 26px;
+}
+.hero .btn-get-started {
+  margin-top: 30px;
+  line-height: 0;
+  padding: 15px 40px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #495057;
+  border: 1px #c92a2a solid;
+}
+.hero .btn-get-started span {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.hero .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.hero .btn-get-started:hover i {
+  transform: translateX(5px);
+}
+.hero .hero-img {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
+  .hero .hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
+  .hero .hero-img img {
+    width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .hero h2 {
+    font-size: 24px;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Index Page
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# methodology_and_result_section
+--------------------------------------------------------------*/
+
+.methodology_and_result_section .content {
+  padding: 40px;
+}
+.methodology_and_result_section img {
+  width: 100px;
+  height: auto;
+}
+.methodology_and_result_section h3 {
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #495057;
+  text-transform: uppercase;
+}
+
+.methodology_and_result_section p {
+  margin: 15px 0 30px 0;
+  line-height: 24px;
+  color: #495057;
+}
+
+/*--------------------------------------------------------------
+# Values
+--------------------------------------------------------------*/
+.participation_section {
+  transition: 0.3s;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.participation_section .icon img {
+  transition: 0.5s;
+  height: 80px;
+}
+.participation_section h3 {
+  font-size: 24px;
+  color: #495057;
+  font-weight: 600;
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+/*--------------------------------------------------------------
+# F.A.Q
+--------------------------------------------------------------*/
+.faq .accordion-collapse {
+  border: 0;
+  
+}
+.faq .accordion-button {
+  padding: 15px 15px 20px 0;
+  font-weight: 600;
+  border: 0;
+  font-size: 18px;
+  color: #f03e3e;
+  text-align: left;
+}
+
+.faq .accordion-header i {
+  padding-right: 10px;
+}
+.faq .accordion-button:focus {
+  box-shadow: none;
+}
+.faq .accordion-button:not(.collapsed) {
+  background: none;
+  color: #f03e3e;
+  border-bottom: 0;
+}
+.faq .accordion-body {
+  padding: 0 0 25px 0;
+  border: 0;
+}
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  background: #fff;
+  padding: 30px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  color: #495057;
+}
+/*--------------------------------------------------------------
+# modal
+--------------------------------------------------------------*/
+.btn-modal {
+  padding-bottom: 60px;
+}
+.btn-modal button,
+.btn-modal button:focus {
+  color: #f03e3e;
+  background-color: #fff;
+  border: 1px solid #f03e3e;
+}
+.btn-modal button a {
+  color: #f03e3e;
+}
+.btn-modal button:hover {
+  background-color: #f03e3e;
+  border: 1px solid #f03e3e;
+}
+.btn-modal button a:hover,
+.btn-modal button:hover a {
+  color: #fff !important;
+}
+.modal {
+  background-color: rgba(240, 62, 62, 0.1);
+}
+.modal .modal-title {
+  font-size: 24px;
+  color: #495057;
+}
+.modal .modal-body h3 {
+  font-size: 18px;
+  color: #495057;
+  font-weight: 600;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  background: #f03e3e;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+}
+.footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+}
